@@ -74,7 +74,7 @@ const ESTADOS = ["Aguardando entrega","Em triagem","Destinado","Concluído"];
    estado: número que indexa ESTADOS.                                    */
 const TICKETS_INICIAIS = [
   { id: "TK-0001", item: "Teclado",   usuario: "Você",          curso: "ADS",  ponto: "Biblioteca — Térreo",         estado: 1, criado: "2026-04-20", aberto: false },
-  { id: "TK-0002", item: "Bateria",   usuario: "Você",          curso: "ADS",  ponto: "Ponto de Baterias — Entrada", estado: 3, criado: "2026-04-15", aberto: false, doado: false },
+  { id: "TK-0002", item: "Bateria",   usuario: "Você",          curso: "ADS",  ponto: "Ponto de Baterias — Entrada", estado: 3, criado: "2026-05-22", aberto: false, doado: false },
   { id: "TK-0003", item: "Monitor",   usuario: "Maria Silva",   curso: "ADS",  ponto: "Lab. de Hardware — Bloco B",  estado: 0, criado: "2026-04-23", aberto: true  },
   { id: "TK-0004", item: "Notebook",  usuario: "João Santos",   curso: "SI",   ponto: "Lab. de Hardware — Bloco B",  estado: 2, criado: "2026-04-22", aberto: true  },
   { id: "TK-0005", item: "Pilha",     usuario: "Ana Costa",     curso: "ADM",  ponto: "Ponto de Baterias — Entrada", estado: 1, criado: "2026-04-22", aberto: true  },
@@ -885,8 +885,8 @@ function ScreenMeusDados() {
     nome: "Isabella Menezes",
     email: "isabella.menezes@cogna.com.br",
     curso: "ADS",
-    cadastradoEm: "2026-04-15",
-    consentimento: "Aceito em 15/04/2026 às 19:42",
+    cadastradoEm: "2026-05-22",
+    consentimento: "Aceito em 22/05/2026 às 19:42",
     tickets: 3,
     certificados: 1,
   };
@@ -947,8 +947,8 @@ function ScreenMeusDados() {
       <Card className="p-5">
         <div className="font-semibold mb-2">Encarregado pelos Dados (DPO)</div>
         <div className="text-sm text-slate-700">
-          <div><b>Nome:</b> [Nome do DPO da instituição]</div>
-          <div><b>E-mail:</b> dpo@instituicao.edu.br</div>
+          <div><b>Nome:</b> [Marcio Joaquim]</div>
+          <div><b>E-mail:</b> marcio.joaquim@cogna.com.br</div>
           <div className="text-xs text-slate-500 mt-2">Conforme Art. 41 da LGPD, o titular pode contatar o Encarregado para esclarecimentos sobre o tratamento de seus dados.</div>
         </div>
       </Card>
@@ -1015,7 +1015,7 @@ function PrivacyModal({onClose}) {
           <p><b>5. Segurança.</b> Criptografia em repouso (AES-256), HTTPS obrigatório (TLS 1.2+), senhas em bcrypt (custo 12+), trilha de auditoria de 2 anos.</p>
           <p><b>6. Direitos do titular (Art. 18).</b> Você pode, a qualquer momento, em "Meus dados": (i) confirmar o tratamento, (ii) acessar seus dados, (iii) corrigi-los, (iv) solicitar anonimização ou exclusão, (v) exportar em formato JSON, (vi) revogar o consentimento.</p>
           <p><b>7. Retenção.</b> Tickets concluídos são retidos por 2 anos para fins de auditoria; após esse prazo, são anonimizados.</p>
-          <p><b>8. Encarregado pelos Dados (DPO).</b> Contato: dpo@instituicao.edu.br (Art. 41).</p>
+          <p><b>8. Encarregado pelos Dados (DPO).</b> Contato: marcio.joaquim@cogna.com.br (Art. 41).</p>
           <p className="text-xs text-slate-500">Versão 1.0 — abril/2026.</p>
         </div>
       </div>
