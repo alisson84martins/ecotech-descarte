@@ -776,7 +776,7 @@ function Certificado({t}) {
       </div>
       <div className="p-5 space-y-1">
         <div className="text-sm text-slate-600">Este certificado reconhece</div>
-        <div className="text-lg font-bold">Isabela Meneses</div>
+        <div className="text-lg font-bold">Isabella Menezes</div>
         <div className="text-sm text-slate-600">pelo descarte correto de <b>{t.item}</b> no ponto <b>{t.ponto}</b>.</div>
         <div className="text-xs text-slate-500 mt-2">Ticket {t.id} · {t.criado}</div>
         <div className="mt-3 flex gap-2">
