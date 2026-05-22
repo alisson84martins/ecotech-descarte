@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>EcoTech Descarte — Protótipo</title>
+
+  <!-- ── Tailwind CSS (CDN) ──────────────────────────────────────────────
+       Framework de utilitários CSS. Gera as classes inline usadas
+       nos componentes React (ex: bg-emerald-600, rounded-xl, etc.).     -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- ── React 18 (produção) ────────────────────────────────────────────
+       Biblioteca principal para construção da interface declarativa.
+       react.production.min.js → núcleo do React (sem DOM).              -->
+  <script src="https://unpkg.com/react@18/umd/react.production.min.js"></script>
+
+  <!-- ── ReactDOM 18 ────────────────────────────────────────────────────
+       Responsável por montar os componentes React no DOM real do browser.
+       Usado no final do app.js: ReactDOM.createRoot(...).render(<App/>). -->
+  <script src="https://unpkg.com/react-dom@18/umd/react-dom.production.min.js"></script>
+
+  <!-- ── Babel Standalone ───────────────────────────────────────────────
+       Transpila JSX diretamente no navegador (sem build step).
+       Necessário porque app.js usa sintaxe JSX (<Component />) que
+       o browser não entende nativamente.
+       ⚠️ Em produção real, substituir por build com Vite/Parcel.        -->
+  <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+
+  <!-- ── Estilos globais ────────────────────────────────────────────────
+       Arquivo externo com: altura base, tipografia, animação fade-in
+       e o padrão visual do QR Code simulado.                            -->
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<!-- Tailwind: fundo cinza-claro e cor de texto padrão para toda a página -->
+<body class="bg-slate-50 text-slate-900">
+
+  <!-- ── Ponto de montagem do React ──────────────────────────────────────
+       O div#root é o único elemento estático da página.
+       Todo o conteúdo visual é gerado dinamicamente pelo React (app.js). -->
+  <div id="root"></div>
+
+  <!-- ── Lógica da aplicação ────────────────────────────────────────────
+       type="text/babel" instrui o Babel a transpilar este arquivo antes
+       de executá-lo. data-presets define quais transformações aplicar:
+         env   → sintaxe moderna de JS (arrow functions, spread, etc.)
+         react → transforma JSX em chamadas React.createElement()        -->
+  <script type="text/babel" data-presets="env,react" src="app.js"></script>
+
+</body>
+</html>

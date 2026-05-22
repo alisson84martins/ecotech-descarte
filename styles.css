@@ -1,0 +1,40 @@
+/* ============================================================
+   styles.css — EcoTech Descarte
+   Estilos globais do protótipo.
+   Referenciado por: index.html
+   ============================================================ */
+
+/* ── Base: ocupa 100% da altura da viewport ──────────────────
+   Garante que o layout ocupe toda a tela, sem scroll desnecessário.
+   O #root é onde o React monta a árvore de componentes.         */
+html, body, #root { height: 100%; }
+
+/* ── Tipografia global ───────────────────────────────────────
+   Define a fonte padrão do sistema operacional para toda a página,
+   seguindo a stack nativa de cada plataforma (iOS, Android, Windows).  */
+body {
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+}
+
+/* ── Animação de entrada suave ───────────────────────────────
+   Aplicada via classe .fade-in nos componentes de tela.
+   Ao trocar de tela no menu, o conteúdo desliza levemente de baixo
+   para cima enquanto vai de opacidade 0 a 1 (duração: 250ms).       */
+.fade-in {
+  animation: fadeIn .25s ease-out;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(4px); }
+  to   { opacity: 1; transform: translateY(0);   }
+}
+
+/* ── Padrão visual de QR Code (simulação) ────────────────────
+   Cria um grid xadrez com linhas horizontais e verticais usando
+   dois gradientes repetidos sobrepostos. Usado no modal de scan
+   de QR e na tela de Admin > Gerar QR Codes.                        */
+.qr-pattern {
+  background-image:
+    repeating-linear-gradient(0deg,  #111 0 10px, transparent 10px 20px),
+    repeating-linear-gradient(90deg, #111 0 10px, transparent 10px 20px);
+}
