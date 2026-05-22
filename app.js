@@ -882,8 +882,8 @@ function ScreenMeusDados() {
   /* Dados pessoais simulados do usuário atual */
   const dadosUsuario = {
     matricula: "20260001",
-    nome: "Isabela Meneses",
-    email: "isabela.meneses@anhanguera.edu.br",
+    nome: "Isabella Menezes",
+    email: "isabella.menezes@cogna.com.br",
     curso: "ADS",
     cadastradoEm: "2026-04-15",
     consentimento: "Aceito em 15/04/2026 às 19:42",
