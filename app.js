@@ -947,7 +947,7 @@ function ScreenMeusDados() {
       <Card className="p-5">
         <div className="font-semibold mb-2">Encarregado pelos Dados (DPO)</div>
         <div className="text-sm text-slate-700">
-          <div><b>Nome:</b> [Marcio Joaquim]</div>
+          <div><b>Nome:</b> Marcio Joaquim</div>
           <div><b>E-mail:</b> marcio.joaquim@cogna.com.br</div>
           <div className="text-xs text-slate-500 mt-2">Conforme Art. 41 da LGPD, o titular pode contatar o Encarregado para esclarecimentos sobre o tratamento de seus dados.</div>
         </div>
